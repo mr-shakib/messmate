@@ -28,8 +28,8 @@ Vercel will create **two projects** from **one repo** by using different root di
 4. Network Access → Add IP: `0.0.0.0/0` (allow all)
 5. Get connection string:
    - Click "Connect" → "Connect your application"
-   - Copy: `mongodb+srv://messmate:<password>@cluster.mongodb.net/messmate`
-   - Replace `<password>` with your actual password
+   - Copy the connection string format: `mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbname>`
+   - Replace placeholders with your actual credentials
 
 ## Step 2: Generate JWT Secrets (30 seconds)
 
@@ -81,9 +81,9 @@ Add these variables:
 
 ```
 NODE_ENV=production
-MONGODB_URI=mongodb+srv://messmate:YOUR_PASSWORD@cluster.mongodb.net/messmate
-JWT_ACCESS_SECRET=your-first-generated-secret
-JWT_REFRESH_SECRET=your-second-generated-secret
+MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbname>
+JWT_ACCESS_SECRET=<your-first-generated-secret>
+JWT_REFRESH_SECRET=<your-second-generated-secret>
 FRONTEND_URL=https://your-frontend.vercel.app
 CORS_ORIGIN=https://your-frontend.vercel.app,http://localhost:5173
 BCRYPT_ROUNDS=10

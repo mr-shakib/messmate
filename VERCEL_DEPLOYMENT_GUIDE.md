@@ -30,7 +30,7 @@ Frontend (Vercel)          Backend (Vercel Serverless)
 2. Create a free cluster
 3. Create a database user with password
 4. Whitelist all IPs: `0.0.0.0/0` (for Vercel's dynamic IPs)
-5. Get connection string: `mongodb+srv://username:password@cluster.mongodb.net/messmate`
+5. Get connection string: `mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbname>`
 
 ## Part 2: Backend Deployment (Serverless)
 
@@ -121,9 +121,9 @@ In Vercel Dashboard → Project → Settings → Environment Variables:
 
 ```
 NODE_ENV=production
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/messmate
-JWT_ACCESS_SECRET=your-super-secret-access-key-min-32-chars
-JWT_REFRESH_SECRET=your-super-secret-refresh-key-min-32-chars
+MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbname>
+JWT_ACCESS_SECRET=<your-super-secret-access-key-min-32-chars>
+JWT_REFRESH_SECRET=<your-super-secret-refresh-key-min-32-chars>
 FRONTEND_URL=https://your-frontend.vercel.app
 BCRYPT_ROUNDS=10
 RATE_LIMIT_WINDOW_MS=900000

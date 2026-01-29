@@ -153,7 +153,7 @@ If you find secrets in history, see "Emergency: Secrets Already Committed" below
 **Good** - `.env.example`:
 ```bash
 # MongoDB Connection
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/dbname
+MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbname>
 
 # JWT Secrets
 JWT_ACCESS_SECRET=your-secret-here
@@ -162,16 +162,16 @@ JWT_REFRESH_SECRET=your-secret-here
 
 **Bad** - `.env` (never commit):
 ```bash
-MONGODB_URI=mongodb+srv://admin:RealPassword123@cluster.mongodb.net/messmate
-JWT_ACCESS_SECRET=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6
+MONGODB_URI=mongodb+srv://<actual-user>:<actual-password>@<actual-cluster>.mongodb.net/messmate
+JWT_ACCESS_SECRET=<actual-secret-key>
 ```
 
 ### 2. Never Hardcode Secrets
 
 **Bad** ❌:
 ```typescript
-const mongoUri = "mongodb+srv://admin:RealPassword123@cluster.mongodb.net/messmate";
-const jwtSecret = "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6";
+const mongoUri = "mongodb+srv://<user>:<password>@<cluster>.mongodb.net/messmate";
+const jwtSecret = "<hardcoded-secret>";
 ```
 
 **Good** ✅:

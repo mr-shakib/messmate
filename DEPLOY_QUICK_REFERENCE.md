@@ -17,7 +17,7 @@ cd ../frontend && vercel --prod
 
 ### Backend (Vercel Dashboard)
 ```
-MONGODB_URI=mongodb+srv://user:pass@cluster.mongodb.net/messmate
+MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbname>
 JWT_ACCESS_SECRET=<generate-32-char-secret>
 JWT_REFRESH_SECRET=<generate-32-char-secret>
 FRONTEND_URL=https://your-frontend.vercel.app
