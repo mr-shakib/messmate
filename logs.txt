@@ -1,0 +1,76 @@
+ExpenseList.tsx:48  GET http://localhost:5000/api/expenses?messId=6963fd0f4e33332f302bca13 500 (Internal Server Error)
+dispatchXhrRequest @ axios.js?v=e2eace34:1696
+xhr @ axios.js?v=e2eace34:1573
+dispatchRequest @ axios.js?v=e2eace34:2107
+Promise.then
+_request @ axios.js?v=e2eace34:2310
+request @ axios.js?v=e2eace34:2219
+Axios.<computed> @ axios.js?v=e2eace34:2346
+wrap @ axios.js?v=e2eace34:8
+fetchExpenses @ ExpenseList.tsx:48
+(anonymous) @ ExpenseList.tsx:27
+commitHookEffectListMount @ chunk-PJEEZAML.js?v=e2eace34:16915
+commitPassiveMountOnFiber @ chunk-PJEEZAML.js?v=e2eace34:18156
+commitPassiveMountEffects_complete @ chunk-PJEEZAML.js?v=e2eace34:18129
+commitPassiveMountEffects_begin @ chunk-PJEEZAML.js?v=e2eace34:18119
+commitPassiveMountEffects @ chunk-PJEEZAML.js?v=e2eace34:18109
+flushPassiveEffectsImpl @ chunk-PJEEZAML.js?v=e2eace34:19490
+flushPassiveEffects @ chunk-PJEEZAML.js?v=e2eace34:19447
+commitRootImpl @ chunk-PJEEZAML.js?v=e2eace34:19416
+commitRoot @ chunk-PJEEZAML.js?v=e2eace34:19277
+performSyncWorkOnRoot @ chunk-PJEEZAML.js?v=e2eace34:18895
+flushSyncCallbacks @ chunk-PJEEZAML.js?v=e2eace34:9119
+(anonymous) @ chunk-PJEEZAML.js?v=e2eace34:18627
+ExpenseList.tsx:65 Failed to fetch expenses: AxiosError {message: 'Request failed with status code 500', name: 'AxiosError', code: 'ERR_BAD_RESPONSE', config: {…}, request: XMLHttpRequest, …}
+fetchExpenses @ ExpenseList.tsx:65
+await in fetchExpenses
+(anonymous) @ ExpenseList.tsx:27
+commitHookEffectListMount @ chunk-PJEEZAML.js?v=e2eace34:16915
+commitPassiveMountOnFiber @ chunk-PJEEZAML.js?v=e2eace34:18156
+commitPassiveMountEffects_complete @ chunk-PJEEZAML.js?v=e2eace34:18129
+commitPassiveMountEffects_begin @ chunk-PJEEZAML.js?v=e2eace34:18119
+commitPassiveMountEffects @ chunk-PJEEZAML.js?v=e2eace34:18109
+flushPassiveEffectsImpl @ chunk-PJEEZAML.js?v=e2eace34:19490
+flushPassiveEffects @ chunk-PJEEZAML.js?v=e2eace34:19447
+commitRootImpl @ chunk-PJEEZAML.js?v=e2eace34:19416
+commitRoot @ chunk-PJEEZAML.js?v=e2eace34:19277
+performSyncWorkOnRoot @ chunk-PJEEZAML.js?v=e2eace34:18895
+flushSyncCallbacks @ chunk-PJEEZAML.js?v=e2eace34:9119
+(anonymous) @ chunk-PJEEZAML.js?v=e2eace34:18627
+ExpenseList.tsx:48  GET http://localhost:5000/api/expenses?messId=6963fd0f4e33332f302bca13 500 (Internal Server Error)
+dispatchXhrRequest @ axios.js?v=e2eace34:1696
+xhr @ axios.js?v=e2eace34:1573
+dispatchRequest @ axios.js?v=e2eace34:2107
+Promise.then
+_request @ axios.js?v=e2eace34:2310
+request @ axios.js?v=e2eace34:2219
+Axios.<computed> @ axios.js?v=e2eace34:2346
+wrap @ axios.js?v=e2eace34:8
+fetchExpenses @ ExpenseList.tsx:48
+(anonymous) @ ExpenseList.tsx:27
+commitHookEffectListMount @ chunk-PJEEZAML.js?v=e2eace34:16915
+invokePassiveEffectMountInDEV @ chunk-PJEEZAML.js?v=e2eace34:18324
+invokeEffectsInDev @ chunk-PJEEZAML.js?v=e2eace34:19701
+commitDoubleInvokeEffectsInDEV @ chunk-PJEEZAML.js?v=e2eace34:19686
+flushPassiveEffectsImpl @ chunk-PJEEZAML.js?v=e2eace34:19503
+flushPassiveEffects @ chunk-PJEEZAML.js?v=e2eace34:19447
+commitRootImpl @ chunk-PJEEZAML.js?v=e2eace34:19416
+commitRoot @ chunk-PJEEZAML.js?v=e2eace34:19277
+performSyncWorkOnRoot @ chunk-PJEEZAML.js?v=e2eace34:18895
+flushSyncCallbacks @ chunk-PJEEZAML.js?v=e2eace34:9119
+(anonymous) @ chunk-PJEEZAML.js?v=e2eace34:18627
+ExpenseList.tsx:65 Failed to fetch expenses: AxiosError {message: 'Request failed with status code 500', name: 'AxiosError', code: 'ERR_BAD_RESPONSE', config: {…}, request: XMLHttpRequest, …}
+fetchExpenses @ ExpenseList.tsx:65
+await in fetchExpenses
+(anonymous) @ ExpenseList.tsx:27
+commitHookEffectListMount @ chunk-PJEEZAML.js?v=e2eace34:16915
+invokePassiveEffectMountInDEV @ chunk-PJEEZAML.js?v=e2eace34:18324
+invokeEffectsInDev @ chunk-PJEEZAML.js?v=e2eace34:19701
+commitDoubleInvokeEffectsInDEV @ chunk-PJEEZAML.js?v=e2eace34:19686
+flushPassiveEffectsImpl @ chunk-PJEEZAML.js?v=e2eace34:19503
+flushPassiveEffects @ chunk-PJEEZAML.js?v=e2eace34:19447
+commitRootImpl @ chunk-PJEEZAML.js?v=e2eace34:19416
+commitRoot @ chunk-PJEEZAML.js?v=e2eace34:19277
+performSyncWorkOnRoot @ chunk-PJEEZAML.js?v=e2eace34:18895
+flushSyncCallbacks @ chunk-PJEEZAML.js?v=e2eace34:9119
+(anonymous) @ chunk-PJEEZAML.js?v=e2eace34:18627

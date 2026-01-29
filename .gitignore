@@ -1,0 +1,98 @@
+# Root .gitignore for MessMate Monorepo
+# This file protects secrets at the repository root level
+
+# Environment variables - CRITICAL: Never commit these!
+.env
+.env.*
+!.env.example
+!.env.production.example
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel
+.vercel/
+.vercel.json.backup
+
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# IDE
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Database files (if any local DBs)
+*.sqlite
+*.sqlite3
+*.db
+
+# Secrets and keys - CRITICAL: Never commit these!
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+secrets/
+private/
+credentials/
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# Deployment scripts with secrets (if any)
+deploy-secrets.sh
+deploy-secrets.bat
+
+# Local configuration
+config.local.js
+config.local.json
+
+# Package manager files (optional - uncomment if needed)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
