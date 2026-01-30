@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import type { Expense, ExpenseFilters, PaginatedResponse } from '../../types';
+import type { Expense, ExpenseFilters } from '../../types';
 import api from '../../services/api';
 import { useMessStore } from '../../store/messStore';
 import { useUIStore } from '../../store/uiStore';

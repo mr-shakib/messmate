@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import type { Settlement, SettlementFilters, PaginatedResponse } from '../../types';
+import type { Settlement, SettlementFilters } from '../../types';
 import api from '../../services/api';
 import { useMessStore } from '../../store/messStore';
 import { useAuthStore } from '../../store/authStore';
