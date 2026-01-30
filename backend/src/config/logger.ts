@@ -1,7 +1,6 @@
 import winston from 'winston';
 
 const logLevel = process.env.LOG_LEVEL || 'info';
-const logFilePath = process.env.LOG_FILE_PATH || 'logs/app.log';
 
 const logFormat = winston.format.combine(
   winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
@@ -28,8 +27,10 @@ const transports: winston.transport[] = [
   }),
 ];
 
-// Add file transport in production
-if (process.env.NODE_ENV === 'production') {
+// Only use file logging in non-serverless environments
+// Vercel serverless functions have read-only filesystem except /tmp
+if (process.env.NODE_ENV === 'production' && !process.env.VERCEL) {
+  const logFilePath = process.env.LOG_FILE_PATH || 'logs/app.log';
   transports.push(
     new winston.transports.File({
       filename: logFilePath,
@@ -43,3 +44,4 @@ export const logger = winston.createLogger({
   format: logFormat,
   transports,
 });
+
