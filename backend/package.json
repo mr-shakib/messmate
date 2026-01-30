@@ -15,7 +15,7 @@
     "format": "prettier --write \"src/**/*.ts\""
   },
   "engines": {
-    "node": "18.x"
+    "node": "20.x"
   },
   "keywords": [
     "mess",
